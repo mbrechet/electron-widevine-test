@@ -12,7 +12,8 @@ let mainWindow;
 
 
 //let widevine_adapter_path= app.getPath('appData').concat('/electron-quick-start/widevine/1.4.8.866/_platform_specific/mac_x64/widevinecdmadapter.plugin');
-let widevine_adapter_path = './widevine/1.4.8.866/_platform_specific/mac_x64/widevinecdmadapter.plugin';
+//let widevine_adapter_path = './widevine/1.4.8.866/_platform_specific/mac_x64/widevinecdmadapter.plugin';
+let widevine_adapter_path = __dirname + '/widevine/1.4.8.866/_platform_specific/win_x64/widevinecdmadapter.dll';
 
 app.commandLine.appendSwitch('widevine-cdm-path', widevine_adapter_path);
 app.commandLine.appendSwitch('widevine-cdm-version', '1.4.8.866');
